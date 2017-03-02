@@ -1,5 +1,6 @@
 package com.example.administrator.coolweather;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
@@ -21,6 +22,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.administrator.coolweather.gson.Forecast;
 import com.example.administrator.coolweather.gson.Weather;
+import com.example.administrator.coolweather.service.UpdateWeatherService;
 import com.example.administrator.coolweather.util.HttpUtil;
 import com.example.administrator.coolweather.util.Utility;
 import java.io.IOException;
@@ -160,7 +162,12 @@ public class WeatherActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * 用于将服务器返回的数据显示到界面上面
+     */
     public void showWeatherInfo(Weather weather){
+        Intent intent = new Intent(this, UpdateWeatherService.class);
+        startService(intent);
         forecastLayout.setVisibility(View.VISIBLE);
         String cityName = weather.basic.cityName;
         String updateTime = weather.basic.update.updateTime.split(" ")[1];
