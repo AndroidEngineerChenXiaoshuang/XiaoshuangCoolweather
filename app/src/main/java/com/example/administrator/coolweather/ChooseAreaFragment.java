@@ -109,9 +109,17 @@ public class ChooseAreaFragment extends Fragment {
                     Log.v("Jam","http://guolin.tech/api/china/"+selectedProvince.getProvinceCode()+"/"+selectedCity.getCityCode());
                     queryCounty();
                 }else if(currentlevel == LEVEL_COUNTY){
-                    Intent intent = new Intent(getContext(),WeatherActivity.class);
-                    intent.putExtra("weather_id",counties.get(position).getWeatherId());
-                    getContext().startActivity(intent);
+                    if(getActivity() instanceof MainActivity){
+                        Intent intent = new Intent(getContext(),WeatherActivity.class);
+                        intent.putExtra("weather_id",counties.get(position).getWeatherId());
+                        getContext().startActivity(intent);
+                    }else if(getActivity() instanceof WeatherActivity){
+                        WeatherActivity weatherActivity = (WeatherActivity) getActivity();
+                        weatherActivity.drawerLayout.closeDrawers();
+                        weatherActivity.swipeRefreshLayout.setRefreshing(true);
+                        weatherActivity.weatherRequest(counties.get(position).getWeatherId());
+                    }
+
                 }
             }
         });

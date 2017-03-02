@@ -4,6 +4,11 @@
     android:layout_width="match_parent"
     android:layout_margin="15dp"
     android:layout_height="match_parent">
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/openDrawer"
+        android:background="@drawable/home"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
