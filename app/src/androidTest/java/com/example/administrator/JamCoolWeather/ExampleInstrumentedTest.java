@@ -1,4 +1,4 @@
-package com.example.administrator.coolweather;
+package com.example.administrator.JamCoolWeather;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

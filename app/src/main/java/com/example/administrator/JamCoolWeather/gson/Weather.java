@@ -1,6 +1,4 @@
-package com.example.administrator.coolweather.gson;
-
-import android.content.Context;
+package com.example.administrator.JamCoolWeather.gson;
 
 import com.google.gson.annotations.SerializedName;
 

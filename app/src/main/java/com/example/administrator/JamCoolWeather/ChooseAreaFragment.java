@@ -1,4 +1,4 @@
-package com.example.administrator.coolweather;
+package com.example.administrator.JamCoolWeather;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -15,11 +15,11 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.example.administrator.coolweather.db.City;
-import com.example.administrator.coolweather.db.County;
-import com.example.administrator.coolweather.db.Province;
-import com.example.administrator.coolweather.util.HttpUtil;
-import com.example.administrator.coolweather.util.Utility;
+import com.example.administrator.JamCoolWeather.db.City;
+import com.example.administrator.JamCoolWeather.db.County;
+import com.example.administrator.JamCoolWeather.db.Province;
+import com.example.administrator.JamCoolWeather.util.HttpUtil;
+import com.example.administrator.JamCoolWeather.util.Utility;
 import org.litepal.crud.DataSupport;
 import org.litepal.tablemanager.Connector;
 

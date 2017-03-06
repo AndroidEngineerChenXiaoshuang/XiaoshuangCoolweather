@@ -1,4 +1,4 @@
-package com.example.administrator.coolweather.service;
+package com.example.administrator.JamCoolWeather.service;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -10,9 +10,9 @@ import android.os.IBinder;
 import android.os.SystemClock;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
-import com.example.administrator.coolweather.gson.Weather;
-import com.example.administrator.coolweather.util.HttpUtil;
-import com.example.administrator.coolweather.util.Utility;
+import com.example.administrator.JamCoolWeather.gson.Weather;
+import com.example.administrator.JamCoolWeather.util.HttpUtil;
+import com.example.administrator.JamCoolWeather.util.Utility;
 import java.io.IOException;
 import okhttp3.Call;
 import okhttp3.Callback;

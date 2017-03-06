@@ -1,13 +1,12 @@
-package com.example.administrator.coolweather.util;
+package com.example.administrator.JamCoolWeather.util;
 
 import android.text.TextUtils;
 
-import com.example.administrator.coolweather.db.City;
-import com.example.administrator.coolweather.db.County;
-import com.example.administrator.coolweather.db.Province;
-import com.example.administrator.coolweather.gson.Weather;
+import com.example.administrator.JamCoolWeather.db.City;
+import com.example.administrator.JamCoolWeather.db.County;
+import com.example.administrator.JamCoolWeather.db.Province;
+import com.example.administrator.JamCoolWeather.gson.Weather;
 import com.google.gson.Gson;
-import com.google.gson.JsonArray;
 
 import org.json.JSONArray;
 import org.json.JSONException;

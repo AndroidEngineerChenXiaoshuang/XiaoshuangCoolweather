@@ -4,7 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.administrator.coolweather.MainActivity">
+    tools:context="com.example.administrator.JamCoolWeather.MainActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -12,7 +12,7 @@
         <fragment
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:name="com.example.administrator.coolweather.ChooseAreaFragment"
+            android:name="com.example.administrator.JamCoolWeather.ChooseAreaFragment"
             android:id="@+id/fragment" />
     </FrameLayout>
 
